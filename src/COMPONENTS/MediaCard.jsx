@@ -22,7 +22,10 @@ export default function MediaCard(props) {
       </CardContent>
       <CardActions>
         <Button size="small" href={link}>
-          Git
+          <Typography variant="body2" color={"black"}>
+            {" "}
+            Ziyaret et{" "}
+          </Typography>
         </Button>
       </CardActions>
     </Card>

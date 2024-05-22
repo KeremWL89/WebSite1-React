@@ -1,80 +1,94 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import {  Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import MediaCard from "../COMPONENTS/MediaCard";
 
-
-
 import gitimg from "../image/github.jpg";
-import spoimg from "../image/spotify.jpg"
-import instaimg from "../image/insta.jpg"
-import twitterimg from "../image/twitter.jpg";
-
-
+import spoimg from "../image/spotify.png";
+import instaimg from "../image/insta.png";
+import ximg from "../image/X.png";
+import hackkerrank from "../image/HackerRank.png";
+import leetcode from "../image/leetcode.png";
+import linkedin from "../image/linkedin.png";
 
 function LandingPage() {
-
-   
-
-
-    return (
+  return (
     <>
-   
-      <Box class="LandingPage">
-
-
+      <Box className="LandingPage">
         <div class="hello">
-        <Typography  variant="h4" glutterbottom>
-          Merhaba Sayfama Hoşgeldiniz{" "}
-        </Typography>
+          <Typography variant="h4" fontFamily={"Poetsen One"} glutterbottom>
+            Merhaba Sayfama Hoşgeldiniz{" "}
+          </Typography>
         </div>
 
+        <div class="social-link">
+          <MediaCard
+            link={"https://github.com/WizardLizard8998"}
+            img={gitimg}
+            uname={"GitHub"}
+            desc={
+              "Selam Github sayfama aşağıdan ulaşabilirsiniz. İnceleyip Göz atmayı unutmayın :D"
+            }
+          />
 
-        <div className= "social-link">
-           
-            <MediaCard
-               link ={'https://github.com/WizardLizard8998'}  
-               img ={gitimg} 
-               uname ={"WizardLizard8998"} 
-               desc = {"Selam Github sayfama aşağıdan ulaşabilirsiniz. İnceleyip Göz atmayı unutmayın :D"}
+          <MediaCard
+            link={"https://www.hackerrank.com/profile/berkkanoglukerem"}
+            img={hackkerrank}
+            uname={"HackkerRank"}
+            desc={
+              "Arada burada alıştırmalar yaparak kendimi güncel tutmaya çalışırım."
+            }
+          />
 
-            />
-        
+          <MediaCard
+            link={"https://leetcode.com/u/berkkanoglukerem/"}
+            img={leetcode}
+            uname={"LeetCode"}
+            desc={
+              "Buraya da göz atarak problem çözme yeteneğimi çeşitlendirmeye çalışırım."
+            }
+          />
 
-        
-            <MediaCard
-               link={"https://open.spotify.com/user/keremberkkan?si=ae79196654554b35"}
-               img={spoimg}
-               uname={"Kerem Berkkanoğlu"}
-               desc={"Spotify listelerime bir göz atın derim kesinlikle. İçeride her türden müzik bulabilirsiniz."}
+          <MediaCard
+            link={
+              "https://www.linkedin.com/in/kerem-berkkano%C4%9Flu-a401b6209/"
+            }
+            img={linkedin}
+            uname={"Linkedin"}
+            desc={
+              "Linkedin profilim ise burada yer almakta iletişim için kullanabilirsiniz."
+            }
+          />
 
-            />
-        
-            <MediaCard
-               link={"https://www.instagram.com/kerem_berkkanoglu/"}
-               img={instaimg}
-               uname={"Kerem Berkkanoğlu"}
-               desc={"Instagramıma hoşgeldiniz.Burada benden izler bulabilirsiniz. "}
+          <MediaCard
+            link={
+              "https://open.spotify.com/user/keremberkkan?si=ae79196654554b35"
+            }
+            img={spoimg}
+            uname={"Spotify"}
+            desc={
+              "Spotify listelerime bir göz atın derim kesinlikle. İçeride her türden müzik bulabilirsiniz."
+            }
+          />
 
-            />
-        
-            <MediaCard
-               link={"https://twitter.com/berkkanoglu"}
-               img={twitterimg}
-               uname={"Kerem Berkkanoğlu"}
-               desc={"Twitter insanların özgürlük alanıdır. Kişisel profilime buradan erişebilirsiniz."}
+          <MediaCard
+            link={"https://www.instagram.com/kerem_berkkanoglu/"}
+            img={instaimg}
+            uname={"Instagram"}
+            desc={
+              "Instagramıma hoşgeldiniz.Burada benden izler bulabilirsiniz. "
+            }
+          />
 
-            />
-        
-        
-        
-        
+          <MediaCard
+            link={"https://twitter.com/berkkanoglu"}
+            img={ximg}
+            uname={"X"}
+            desc={
+              "Twitter insanların özgürlük alanıdır. Kişisel profilime buradan erişebilirsiniz."
+            }
+          />
         </div>
-
-
-
-
-
       </Box>
     </>
   );

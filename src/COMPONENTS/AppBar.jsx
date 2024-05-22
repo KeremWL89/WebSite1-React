@@ -15,20 +15,19 @@ export default function KAppBar() {
   return (
     <div>
       <Box>
-        <AppBar class="appBar" position="static" >
+        <AppBar class="appBar" position="static" fontFamily={"Poetsen One"}>
           <Toolbar>
-            <IconButton
+            <Button
               onClick={() => {
                 history("/");
               }}
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
+              color={"inherit"}
             >
-              <Typography variant="h6"> Kerem Berkkanoğlu</Typography>
-            </IconButton>
+              <Typography variant="h6" fontFamily={"Poetsen One"}>
+                {" "}
+                Kerem Berkkanoğlu
+              </Typography>
+            </Button>
 
             <Button
               color="inherit"
@@ -36,9 +35,22 @@ export default function KAppBar() {
                 history("/Blog");
               }}
             >
-              Blog
+              <Typography variant="paragraph" fontFamily={"Poetsen One"}>
+                {" "}
+                Blog
+              </Typography>
             </Button>
-            <Button color="inherit" onClick={() => { history("/BirNotBırak"); }}> Bir Not Bırak </Button>
+            <Button
+              color="inherit"
+              onClick={() => {
+                history("/BirNotBırak");
+              }}
+            >
+              <Typography variant="paragraph" fontFamily={"Poetsen One"}>
+                {" "}
+                Bir not Bırak{" "}
+              </Typography>
+            </Button>
           </Toolbar>
         </AppBar>
       </Box>
