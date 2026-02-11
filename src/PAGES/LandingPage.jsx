@@ -23,7 +23,7 @@ function LandingPage() {
 
         <div class="social-link">
           <MediaCard
-            link={"https://github.com/WizardLizard8998"}
+            link={"https://github.com/KeremWL89"}
             img={gitimg}
             uname={"GitHub"}
             desc={
@@ -62,7 +62,7 @@ function LandingPage() {
 
           <MediaCard
             link={
-              "https://open.spotify.com/user/keremberkkan?si=ae79196654554b35"
+              "https://open.spotify.com/user/keremberkkan?si=1dfe1823317b4622"
             }
             img={spoimg}
             uname={"Spotify"}
@@ -72,7 +72,7 @@ function LandingPage() {
           />
 
           <MediaCard
-            link={"https://www.instagram.com/kerem_berkkanoglu/"}
+            link={"https://www.instagram.com/kerem_brkknglu"}
             img={instaimg}
             uname={"Instagram"}
             desc={
@@ -81,11 +81,11 @@ function LandingPage() {
           />
 
           <MediaCard
-            link={"https://twitter.com/berkkanoglu"}
+            link={"https://x.com/publicvoid01"}
             img={ximg}
             uname={"X"}
             desc={
-              "Twitter insanların özgürlük alanıdır. Kişisel profilime buradan erişebilirsiniz."
+              "Twitter insanların özgürlük alanıdır. Burada da beni takip edebilirsiniz."
             }
           />
         </div>

@@ -1,0 +1,19 @@
+# API Keys ve Hassas Bilgiler
+
+# Bu dosya .gitignore tarafından korunmaktadır ve GitHub'a yüklenmeyecektir.
+
+# UYARI: Asla gerçek API anahtarlarını bu dosyaya koyup commitlemeyin!
+
+# Azure Blog API
+
+AZURE_BLOG_API_KEY=your_api_key_here
+
+# Diğer API Keys
+
+# API_NAME_KEY=value
+
+# Environment Variables
+
+# DATABASE_URL=
+
+# SECRET_TOKEN=

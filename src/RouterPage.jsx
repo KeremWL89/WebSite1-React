@@ -2,12 +2,12 @@ import React from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import KAppBar from "./COMPONENTS/AppBar";
-import BlogPage from "./PAGES/BlogPage";
-import LeaveANote from "./PAGES/LeaveANote";
-
-import MainPage from "./PAGES/MainPage";
 import LandingPage from "./PAGES/LandingPage";
-import DeveloperPage from "./PAGES/DeveloperPage";
+
+//import BlogPage from "./PAGES/BlogPage";
+//import LeaveANote from "./PAGES/LeaveANote";
+//import MainPage from "./PAGES/MainPage";
+// import DeveloperPage from "./PAGES/DeveloperPage"; // unnecessary page for now, can be added later when the page is ready.
 
 function RouterPage() {
   return (
@@ -17,10 +17,6 @@ function RouterPage() {
 
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/dev" element={<MainPage />} />
-          <Route path="/Blog" element={<BlogPage />} />
-          <Route path="/BirNotBırak" element={<LeaveANote />} />
-          <Route path="/BirNotBırak" element={<DeveloperPage />} />
         </Routes>
       </Router>
     </>
@@ -29,4 +25,9 @@ function RouterPage() {
 
 export default RouterPage;
 
+//unnnecessary route for now, can be added later when the page is ready.
+//<Route path="/Blog" element={<BlogPage />} />
+//<Route path="/BirNotBırak" element={<LeaveANote />} />
+//<Route path="/dev" element={<MainPage />} />
+//<Route path="/BirNotBırak" element={<DeveloperPage />} /> 
 //<Route path="/Connection" element={<ConnectionPage/>} />
